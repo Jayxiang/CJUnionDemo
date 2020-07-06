@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CJXAlertView/CJXAlertView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CJTimer/CJXTimer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CJMethodDemo/CJMethodDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CJFormatterDemo/CJFormatterDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CJTextView/CJTextView.xcodeproj">
+   </FileRef>
+</Workspace>

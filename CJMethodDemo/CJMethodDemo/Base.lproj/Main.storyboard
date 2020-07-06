@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV3-C6-3w5">
+                                <rect key="frame" x="141.5" y="96" width="92" height="30"/>
+                                <state key="normal" title="获取协议方法"/>
+                                <connections>
+                                    <action selector="getProtocolClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UfH-gD-qMQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="协议方法：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmA-la-tRQ">
+                                <rect key="frame" x="144" y="146" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdY-rM-e5k">
+                                <rect key="frame" x="156.5" y="218" width="62" height="30"/>
+                                <state key="normal" title="属性获取"/>
+                                <connections>
+                                    <action selector="ivarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSh-4S-chc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所有" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UB0-g0-mKa">
+                                <rect key="frame" x="15" y="278" width="345" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-c4-UXS">
+                                <rect key="frame" x="141.5" y="337.5" width="92" height="30"/>
+                                <state key="normal" title="实例方法获取"/>
+                                <connections>
+                                    <action selector="methodClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9vc-Cf-3W9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实例方法：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWP-cK-Kzr">
+                                <rect key="frame" x="15" y="391" width="345" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eB-Vb-XtB">
+                                <rect key="frame" x="149" y="440" width="77" height="30"/>
+                                <state key="normal" title="类方法获取"/>
+                                <connections>
+                                    <action selector="getClassClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oT-k0-qP2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类方法：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7c-7z-74o">
+                                <rect key="frame" x="15" y="500" width="345" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gmA-la-tRQ" firstAttribute="top" secondItem="LV3-C6-3w5" secondAttribute="bottom" constant="20" id="50y-oq-Bc9"/>
+                            <constraint firstItem="2eB-Vb-XtB" firstAttribute="top" secondItem="oWP-cK-Kzr" secondAttribute="bottom" constant="28.5" id="8MT-z8-7nP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X7c-7z-74o" secondAttribute="trailing" constant="15" id="Amq-99-EuI"/>
+                            <constraint firstItem="UB0-g0-mKa" firstAttribute="top" secondItem="jdY-rM-e5k" secondAttribute="bottom" constant="30" id="BUa-QS-QoU"/>
+                            <constraint firstItem="jdY-rM-e5k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CQg-Aq-oa2"/>
+                            <constraint firstItem="2eB-Vb-XtB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Epm-v2-DY7"/>
+                            <constraint firstItem="E6B-c4-UXS" firstAttribute="top" secondItem="UB0-g0-mKa" secondAttribute="bottom" constant="40" id="Hor-fq-Acb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UB0-g0-mKa" secondAttribute="trailing" constant="15" id="NBe-jK-mnI"/>
+                            <constraint firstItem="E6B-c4-UXS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Sfg-bF-VJc"/>
+                            <constraint firstItem="LV3-C6-3w5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Sx8-jv-aEt"/>
+                            <constraint firstItem="X7c-7z-74o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="WdG-j4-9NS"/>
+                            <constraint firstItem="UB0-g0-mKa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="X4d-Pf-vXp"/>
+                            <constraint firstItem="gmA-la-tRQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xi0-PU-4qv"/>
+                            <constraint firstItem="X7c-7z-74o" firstAttribute="top" secondItem="2eB-Vb-XtB" secondAttribute="bottom" constant="30" id="hDZ-Cf-PSG"/>
+                            <constraint firstItem="LV3-C6-3w5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="hQJ-vw-f4b"/>
+                            <constraint firstItem="jdY-rM-e5k" firstAttribute="top" secondItem="gmA-la-tRQ" secondAttribute="bottom" constant="51" id="oZi-rO-rh6"/>
+                            <constraint firstItem="oWP-cK-Kzr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="q5Y-C6-QnB"/>
+                            <constraint firstItem="oWP-cK-Kzr" firstAttribute="top" secondItem="E6B-c4-UXS" secondAttribute="bottom" constant="23.5" id="qmS-QD-yX4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oWP-cK-Kzr" secondAttribute="trailing" constant="15" id="rYt-Ru-Nsy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FFs-6T-bua"/>
+                    <connections>
+                        <outlet property="classMethodLabel" destination="X7c-7z-74o" id="Q22-c2-PaK"/>
+                        <outlet property="ivarLabel" destination="UB0-g0-mKa" id="mdO-JD-xcP"/>
+                        <outlet property="methodLabel" destination="oWP-cK-Kzr" id="YDL-fj-VPj"/>
+                        <outlet property="protocolLabel" destination="gmA-la-tRQ" id="UVu-Hr-L74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>
